@@ -4,7 +4,7 @@ public class AuthDTO {
     private String cpf;
     private String password;
 
-    AuthDTO(String cpf, String password){
+    public AuthDTO(String cpf, String password){
         this.cpf = cpf;
         this.password = password;
     }
