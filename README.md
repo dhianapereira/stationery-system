@@ -1,5 +1,5 @@
 # Stationery System
-Um sistema para o gerenciamento de estoque de uma papelaria.
+Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/doc/CONTRIBUTING.md).
 
 ## :wrench: Ambiente de Desenvolvimento
 Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
@@ -9,7 +9,6 @@ Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e 
 | Git | A mais recente |
 | IntelliJ IDEA | 2022.3.1 |
 | OpenJDK | 11.0.17 |
-
 
 ## :compass: Guia de Instalação
 > Com as ferramentas devidamente instaladas, execute os comandos abaixo
