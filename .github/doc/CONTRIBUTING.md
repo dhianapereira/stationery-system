@@ -29,12 +29,7 @@ Para evitar conflitos com o código principal que está no repositório remoto d
 
 Se você estiver na branch principal (`main`), rode o comando:
 ```bash
-git checkout develop
-```
-
-Após entrar na branch de desenvolvimento (`develop`), execute:
-```bash
-git pull origin develop
+git pull origin main
 ```
 
 Assim, você evitará muitos problemas e todo mundo fica feliz ;)
@@ -99,7 +94,7 @@ Caso seja exigida alguma alteração, você pode realizar as correções, seguin
 ## 9. O PR foi aprovado?
 > Só siga esse passo se tiver certeza de que o PR foi aprovado. Caso tenha dúvida, pergunte ;)
 
-Se o PR foi aprovado, você pode enviar as alterações realizadas para a _branch_ de desenvolvimento (`develop`) através do botão de `merge` do seu PR. Após o merge, você pode excluir a _branch_ que criou no [passo 4](#4-inicie-a-branch-de-funcionalidade).
+Se o PR foi aprovado, você pode enviar as alterações realizadas para a _branch_ de principal (`main`) através do botão de `merge` do seu PR. Após o merge, você pode excluir a _branch_ que criou no [passo 4](#4-inicie-a-branch-de-funcionalidade).
 
 ## :pencil: Sugerir melhorias ou correções
 Caso você ainda não sinta segurança em contribuir com código ou encontrou um problema/situação de melhoria e quer reportar, crie uma [_issue_](https://github.com/projetosala/projeto-sala-website/issues/new).
