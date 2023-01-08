@@ -9,6 +9,7 @@ Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e 
 | Git | A mais recente |
 | IntelliJ IDEA | 2022.3.1 |
 | OpenJDK | 11.0.17 |
+| MYSQL | 8.0.31 |
 
 ## :compass: Guia de Instalação
 > Com as ferramentas devidamente instaladas, execute os comandos abaixo

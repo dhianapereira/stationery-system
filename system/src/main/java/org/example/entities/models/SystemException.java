@@ -12,6 +12,8 @@ public class SystemException extends Exception {
             return "CPF inválido!";
         }else if(code.equals("invalid_password")){
             return "Senha inválida!";
+        } else if (code.equals("connection_failure")) {
+            return "A conexão com o banco de dados falhou!";
         }
 
         return "Erro desconhecido!";
