@@ -5,7 +5,6 @@ import org.example.entities.models.SystemException;
 import utils.CPFValidator;
 import utils.ExceptionsUtils;
 import utils.PasswordValidator;
-
 import java.util.Scanner;
 
 public class AuthService {
@@ -19,8 +18,8 @@ public class AuthService {
             AuthDTO dto = new AuthDTO(cpf, password);
             System.out.println(dto.getCpf());
             return true;
-        } catch(SystemException systemException){
-            System.out.println(systemException.getMessage());
+        } catch(SystemException exception){
+            System.out.println(exception.getMessage());
             return false;
         }catch(Exception exception){
             System.out.println(ExceptionsUtils.message(exception));
