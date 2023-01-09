@@ -1,6 +1,6 @@
-package entities.models.user;
+package domain.models.user;
 
-import entities.interfaces.CommonActions;
+import domain.interfaces.CommonActions;
 
 public class AdminUser extends User implements CommonActions {
     public AdminUser(String cpf, String name, int age, boolean isActive, boolean isAdmin, String password){

@@ -1,4 +1,4 @@
-package entities.models.user;
+package domain.models.user;
 
 abstract public class User {
     protected String cpf;

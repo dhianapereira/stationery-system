@@ -1,4 +1,4 @@
-package entities.models.failure;
+package domain.models.failure;
 
 public class SystemException extends Exception {
     private String code;

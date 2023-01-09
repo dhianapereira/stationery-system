@@ -1,5 +1,5 @@
-import entities.models.user.User;
-import services.auth.AuthService;
+import domain.models.user.User;
+import services.AuthService;
 
 public class Main {
     public static void main(String[] args) {

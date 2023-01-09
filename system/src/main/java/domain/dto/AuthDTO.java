@@ -1,4 +1,4 @@
-package entities.dto;
+package domain.dto;
 
 public class AuthDTO {
     private String cpf;

@@ -1,8 +1,8 @@
-package services.auth;
+package services;
 
-import entities.dto.AuthDTO;
-import entities.models.failure.SystemException;
-import entities.models.user.User;
+import domain.dto.AuthDTO;
+import domain.models.failure.SystemException;
+import domain.models.user.User;
 import repositories.AuthRepository;
 import utils.CPFValidator;
 import utils.ExceptionsUtils;

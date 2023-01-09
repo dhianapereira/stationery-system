@@ -1,11 +1,11 @@
 package repositories;
 
 import data.DatabaseHelper;
-import entities.dto.AuthDTO;
-import entities.models.failure.SystemException;
-import entities.models.user.AdminUser;
-import entities.models.user.CommonUser;
-import entities.models.user.User;
+import domain.dto.AuthDTO;
+import domain.models.failure.SystemException;
+import domain.models.user.AdminUser;
+import domain.models.user.CommonUser;
+import domain.models.user.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

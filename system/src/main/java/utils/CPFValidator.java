@@ -1,6 +1,6 @@
 package utils;
 
-import entities.models.failure.SystemException;
+import domain.models.failure.SystemException;
 
 import java.util.InputMismatchException;
 

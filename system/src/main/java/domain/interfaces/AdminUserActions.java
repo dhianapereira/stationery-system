@@ -1,4 +1,4 @@
-package entities.interfaces;
+package domain.interfaces;
 
 public interface AdminUserActions extends CommonActions{
 
