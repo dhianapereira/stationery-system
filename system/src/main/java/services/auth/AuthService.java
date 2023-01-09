@@ -1,7 +1,8 @@
 package services.auth;
 
 import entities.dto.AuthDTO;
-import entities.models.SystemException;
+import entities.models.failure.SystemException;
+import entities.models.user.User;
 import repositories.AuthRepository;
 import utils.CPFValidator;
 import utils.ExceptionsUtils;
@@ -9,7 +10,7 @@ import utils.PasswordValidator;
 import java.util.Scanner;
 
 public class AuthService {
-    public static boolean login(){
+    public static User login(){
         Scanner input = new Scanner(System.in);
         try {
             System.out.println("Digite seu CPF: ");
@@ -20,10 +21,10 @@ public class AuthService {
             return AuthRepository.getInstance().login(dto);
         } catch(SystemException exception){
             System.out.println(exception.getMessage());
-            return false;
+            return null;
         }catch(Exception exception){
             System.out.println(ExceptionsUtils.message(exception));
-            return false;
+            return null;
         }
     }
 }

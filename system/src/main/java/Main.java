@@ -1,17 +1,18 @@
+import entities.models.user.User;
 import services.auth.AuthService;
 
 public class Main {
     public static void main(String[] args) {
         while(true){
-           boolean isAuthenticated = false;
+           User user = null;
            do{
-               isAuthenticated = AuthService.login();
-               if(!isAuthenticated){
+               user = AuthService.login();
+               if(user==null){
                    System.out.println("Você precisará inserir os dados novamente.");
                }
-           }while (!isAuthenticated);
+           }while (user==null);
 
-            System.out.println("Você está logado");
+            System.out.println("Você está logado" + user.getClass().getSimpleName());
         }
     }
 }

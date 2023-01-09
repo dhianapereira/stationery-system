@@ -1,6 +1,6 @@
 package utils;
 
-import entities.models.SystemException;
+import entities.models.failure.SystemException;
 
 public class PasswordValidator {
     public static String validate(String password) throws SystemException {
