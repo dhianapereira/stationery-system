@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class EnvProperties {
     private static Properties config = new Properties();
-    private static String file = ".env.properties";
+    private static String file = ".env";
 
     public static String getValue(String attribute) {
         try {
