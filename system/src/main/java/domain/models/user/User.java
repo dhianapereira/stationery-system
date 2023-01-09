@@ -1,6 +1,8 @@
 package domain.models.user;
 
-abstract public class User {
+import domain.interfaces.CommonActions;
+
+abstract public class User implements CommonActions {
     protected String cpf;
     protected String name;
     protected String password;
@@ -35,5 +37,12 @@ abstract public class User {
 
     public boolean isAdmin() {
         return isAdmin;
+    }
+
+    public void menuActions(){
+        System.out.println("PAPELARIA");
+    }
+
+    public void selectAction(int option){
     }
 }
