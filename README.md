@@ -23,7 +23,7 @@ git clone https://github.com/dhianapereira/stationery-system.git
 cd stationery-system
 ```
 ### **3. Criar arquivo de variáveis de ambiente**
-Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
+Crie uma cópia do arquivo [`.env.example`](./system/.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
 
 ### **4. Criar banco de dados**
 Crie o banco de dados a partir do script [`database.sql`](./database.sql).
