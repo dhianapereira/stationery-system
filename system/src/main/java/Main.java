@@ -1,5 +1,6 @@
 import domain.models.user.User;
 import services.AuthService;
+import services.MenuService;
 
 import java.util.Scanner;
 
@@ -22,8 +23,9 @@ public class Main {
                if(option == 0){
                    System.out.println("Saindo do sistema...");
                    isLogout = true;
+               }else{
+                   MenuService.selectAction(user.getAction(option));
                }
-               user.selectAction(option);
            }while(!isLogout);
         }
     }

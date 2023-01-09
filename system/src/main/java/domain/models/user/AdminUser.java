@@ -1,8 +1,8 @@
 package domain.models.user;
 
-import domain.interfaces.AdminUserActions;
+import domain.enums.Action;
 
-public class AdminUser extends User implements AdminUserActions {
+public class AdminUser extends User{
     public AdminUser(String cpf, String name, int age, boolean isActive, boolean isAdmin, String password){
         super(cpf, name, age, isActive, isAdmin, password);
     }
@@ -16,4 +16,13 @@ public class AdminUser extends User implements AdminUserActions {
         System.out.println("(4) - Listar todos os produtos");
         System.out.println("(0) - Sair");
     }
+
+    @Override
+    public Action getAction(int action){
+        if(action==1){
+            return Action.createUser;
+        }
+        return null;
+    }
+
 }
