@@ -1,8 +1,8 @@
 package domain.models.user;
 
-import domain.interfaces.CommonActions;
+import domain.enums.Action;
 
-abstract public class User implements CommonActions {
+abstract public class User {
     protected String cpf;
     protected String name;
     protected String password;
@@ -43,6 +43,7 @@ abstract public class User implements CommonActions {
         System.out.println("PAPELARIA");
     }
 
-    public void selectAction(int option){
+    public Action getAction(int action){
+        return null;
     }
 }
