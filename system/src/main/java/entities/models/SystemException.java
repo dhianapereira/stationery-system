@@ -14,6 +14,8 @@ public class SystemException extends Exception {
             return "Senha inválida!";
         } else if (code.equals("connection_failure")) {
             return "A conexão com o banco de dados falhou!";
+        }else if(code.equals("non_existent_user")){
+            return "Esse usuário não existe. Por favor, insira os dados para a autenticação de um usuário existente.";
         }
 
         return "Erro desconhecido!";

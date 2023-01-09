@@ -2,6 +2,7 @@ package services.auth;
 
 import entities.dto.AuthDTO;
 import entities.models.SystemException;
+import repositories.AuthRepository;
 import utils.CPFValidator;
 import utils.ExceptionsUtils;
 import utils.PasswordValidator;
@@ -16,8 +17,7 @@ public class AuthService {
             System.out.println("Digite sua senha: ");
             String password = PasswordValidator.validate(input.next());
             AuthDTO dto = new AuthDTO(cpf, password);
-            System.out.println(dto.getCpf());
-            return true;
+            return AuthRepository.getInstance().login(dto);
         } catch(SystemException exception){
             System.out.println(exception.getMessage());
             return false;

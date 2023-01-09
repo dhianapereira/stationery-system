@@ -12,7 +12,6 @@ public class EnvProperties {
     public static String getValue(String attribute) {
         try {
             config.load(new FileInputStream(file));
-            System.out.println(config.getProperty(attribute));
             return config.getProperty(attribute);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

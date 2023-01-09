@@ -10,9 +10,9 @@ import java.sql.SQLException;
 public class DatabaseHelper {
     public static Connection getConnection() throws SystemException {
         String url = EnvProperties.getValue("DATABASE_URL");
-        String user = EnvProperties.getValue("USER");;
-        String password = EnvProperties.getValue("PASSWORD");;
-        String driver = EnvProperties.getValue("DRIVER_URL");;
+        String user = EnvProperties.getValue("USER");
+        String password = EnvProperties.getValue("PASSWORD");
+        String driver = EnvProperties.getValue("DRIVER_URL");
         try {
             Class.forName(driver);
             Connection connection = DriverManager.getConnection(url, user, password);
