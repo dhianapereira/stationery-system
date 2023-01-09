@@ -1,4 +1,4 @@
-package org.example.entities.dto;
+package entities.dto;
 
 public class AuthDTO {
     private String cpf;

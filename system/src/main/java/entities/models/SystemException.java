@@ -1,4 +1,4 @@
-package org.example.entities.models;
+package entities.models;
 
 public class SystemException extends Exception {
     private String code;

@@ -1,7 +1,7 @@
-package org.example.services.auth;
+package services.auth;
 
-import org.example.entities.dto.AuthDTO;
-import org.example.entities.models.SystemException;
+import entities.dto.AuthDTO;
+import entities.models.SystemException;
 import utils.CPFValidator;
 import utils.ExceptionsUtils;
 import utils.PasswordValidator;

@@ -1,6 +1,6 @@
-package org.example.data;
+package data;
 
-import org.example.entities.models.SystemException;
+import entities.models.SystemException;
 import utils.EnvProperties;
 
 import java.sql.Connection;
