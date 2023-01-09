@@ -1,4 +1,4 @@
-package utils;
+package utils.validators;
 
 import domain.models.failure.SystemException;
 

@@ -4,9 +4,9 @@ import domain.dto.AuthDTO;
 import domain.models.failure.SystemException;
 import domain.models.user.User;
 import repositories.AuthRepository;
-import utils.CPFValidator;
+import utils.validators.CPFValidator;
 import utils.ExceptionsUtils;
-import utils.PasswordValidator;
+import utils.validators.PasswordValidator;
 import java.util.Scanner;
 
 public class AuthService {
