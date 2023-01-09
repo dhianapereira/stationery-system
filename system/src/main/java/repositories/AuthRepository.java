@@ -19,7 +19,7 @@ public class AuthRepository {
         return uniqueInstance;
     }
     public User login(AuthDTO dto) throws SQLException, SystemException {
-        String sql = "SELECT * FROM users WHERE cpf=? AND password=?";
+        String sql = "SELECT * FROM users WHERE cpf=? AND password=? AND isActive!=0";
 
         Connection conn = DatabaseHelper.getConnection();
         PreparedStatement pst = conn.prepareStatement(sql);
