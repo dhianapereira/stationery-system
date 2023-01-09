@@ -16,6 +16,8 @@ public class SystemException extends Exception {
             return "A conexão com o banco de dados falhou!";
         }else if(code.equals("non_existent_user")){
             return "Esse usuário não existe. Por favor, insira os dados para a autenticação de um usuário existente.";
+        }else if(code.equals("create_product_failure")){
+            return "Ocorreu um erro ao tentar cadastra o produto!";
         }
 
         return "Erro desconhecido!";

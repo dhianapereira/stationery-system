@@ -21,6 +21,8 @@ public class AdminUser extends User{
     public Action getAction(int action){
         if(action==1){
             return Action.createUser;
+        }else if(action == 3){
+            return Action.createProduct;
         }
         return null;
     }
