@@ -9,22 +9,16 @@ abstract public class User {
     protected int age;
     protected boolean isActive;
     protected boolean isAdmin;
-
-    protected User(String cpf, String name, int age, boolean isActive, boolean isAdmin, String password){
-        this.cpf = cpf;
-        this.name = name;
-        this.age = age;
-        this.isActive = isActive;
-        this.isAdmin = isAdmin;
-        this.password = password;
-    }
-
     public String getCpf() {
         return cpf;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public int getAge() {

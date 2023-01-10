@@ -4,9 +4,17 @@ import domain.enums.Action;
 
 public class AdminUser extends User{
     public AdminUser(String cpf, String name, int age, boolean isActive, boolean isAdmin, String password){
-        super(cpf, name, age, isActive, isAdmin, password);
+        this.cpf = cpf;
+        this.name = name;
+        this.age = age;
+        this.isActive = isActive;
+        this.isAdmin = isAdmin;
+        this.password = password;
     }
-
+    public AdminUser(String cpf, String name){
+        this.cpf = cpf;
+        this.name = name;
+    }
     @Override
     public void menuActions(){
         super.menuActions();
@@ -21,7 +29,9 @@ public class AdminUser extends User{
     public Action getAction(int action){
         if(action==1){
             return Action.createUser;
-        }else if(action == 3){
+        }else if(action==2){
+            return Action.getUsers;
+        } else if(action == 3){
             return Action.createProduct;
         }
         return null;
